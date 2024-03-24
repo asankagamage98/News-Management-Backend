@@ -3,11 +3,13 @@ const express = require("express");
 const cors = require("cors");
 const { dbConnect } = require("./src/utils/dbConnection");
 const bodyParser = require("body-parser");
+
 dbConnect();
 
+// Import routes
+const userRouter = require("./src/routes/user.routes");
 
 app = express();
-
 
 
 app.use(cors());
@@ -18,6 +20,8 @@ app.get("/", (req, res) => {
   res.send("Asanka Gamage - News Application Service working");
 });
 
+// Define routes for notes
+app.use("/api/user", userRouter);
 
 
 const PORT = process.env.PORT;
