@@ -43,6 +43,7 @@ const remove = async (req, res) => {
         res.status(500).json(err)
     }
 }
+
 module.exports = {
   create,
   getAllUsers,

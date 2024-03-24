@@ -18,10 +18,10 @@ const newsSchema = new Schema( {
         enum: ['politics', 'sports', 'technology', 'entertainment'],
         required: true
     },
-    publishedAt: {
+    publishedDate: {
         type: Date,
-        default: Date.now
-    }
+        required: true 
+    },
 },
 {
     timestamps: true,

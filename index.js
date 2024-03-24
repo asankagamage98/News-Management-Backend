@@ -8,6 +8,7 @@ dbConnect();
 
 // Import routes
 const userRouter = require("./src/routes/user.routes");
+const newsRouter = require("./src/routes/news.routes");
 
 app = express();
 
@@ -22,6 +23,7 @@ app.get("/", (req, res) => {
 
 // Define routes for notes
 app.use("/api/user", userRouter);
+app.use("/api/news", newsRouter);
 
 
 const PORT = process.env.PORT;
