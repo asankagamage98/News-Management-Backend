@@ -3,7 +3,7 @@ const NewsService = require('../services/news.service')
 
 // Define controller functions
 
-// Retrieves all news and search news 
+// Retrieves all news and search news
 const getAll = async (req, res) => {
     try {
         const { search, sortBy } = req.query
@@ -29,7 +29,7 @@ const getAll = async (req, res) => {
     }
 }
 
-// Retrieves news by its ID 
+// Retrieves news by its ID
 const getById = async (req, res) => {
     try {
         const note = await NewsService.getById(req.params.id)
@@ -38,7 +38,7 @@ const getById = async (req, res) => {
         res.status(500).json(err)
     }
 }
-// Create new news 
+// Create new news
 const create = async (req, res) => {
     try {
         const news = await NewsService.create(req.body)
