@@ -3,9 +3,15 @@ const bcrypt = require('bcrypt')
 
 //user create service
 const create = async (userdata) => {
-    const { name, email, password } = userdata
+    const { name, email, password,confirmPassword } = userdata
 
     try {
+
+        // Check if password and confirm password match
+        if (password !== confirmPassword) {
+            throw new Error('Passwords do not match');
+        }
+
         const hashedPassword = await bcrypt.hash(password, 10)
 
         const user = await new User({
