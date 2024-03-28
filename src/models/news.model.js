@@ -19,10 +19,6 @@ const newsSchema = new Schema(
             enum: ['politics', 'sports', 'technology', 'entertainment'],
             required: true,
         },
-        publishedDate: {
-            type: Date,
-            required: true,
-        },
     },
     {
         timestamps: true,

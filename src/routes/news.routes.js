@@ -12,7 +12,7 @@ router.put('/:id', validateToken, update)
 // Route to remove news article
 router.delete('/:id', validateToken, remove)
 // Route to get news articale by id
-router.get('/:id', validateToken, getById)
+router.get('/:id', getById)
 //Route to get all news article
 router.get('/', getAll)
 

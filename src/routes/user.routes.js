@@ -14,6 +14,6 @@ router.put('/:id', validateToken, update)
 // Route to remove user
 router.delete('/:id', validateToken, remove)
 //Route to get all user details
-router.get('/', getAllUsers)
+router.get('/',validateToken, getAllUsers)
 
 module.exports = router
