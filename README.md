@@ -29,10 +29,10 @@ Domains
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/asankagamage98/Note-management-backend.git
+   git clone https://github.com/asankagamage98/News-Management-Backend.git
 
 2. Navigate to the project directory:
-    cd Note-management-backend
+    cd News-Management-Backend
 
 3. Install dependencies:
     npm install
