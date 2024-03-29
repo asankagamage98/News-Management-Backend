@@ -13,7 +13,7 @@
 
 
 ## project-overview
-This is a backend  project of news managment, that allows admin to manage their news. admin can create, view, update, and delete news through an intuitive user interface. users can only view the news.
+This is a backend  project of news managment, that allows admin to manage their news. admin can create, view, update, and delete news through an intuitive user interface. non-registered users can view the news.
 
 ## Demo
 Check out the live demo
