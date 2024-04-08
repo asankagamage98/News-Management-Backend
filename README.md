@@ -17,10 +17,10 @@ This is a backend  project of news managment, that allows admin to manage their 
 
 ## Demo
 Check out the live demo
-[here](https://vercel.com/asankagamage98s-projects/news-management-backend/2PfoyCCSH7mCiV7Z21nVyzTJ1qav).
+[here](https://news-management-backend.vercel.app/).
 
 Domains
-[here](news-management-backend-ss910w62k-asankagamage98s-projects.vercel.app).
+[here](https://news-management-backend-git-main-asankagamage98s-projects.vercel.app/).
 
 
 
